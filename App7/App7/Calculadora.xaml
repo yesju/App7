@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App7.Calculadora">
+    
+    <StackLayout VerticalOptions="Center">
+        <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" VerticalOptions="Center" TextColor="Gray" HorizontalOptions="Center">Calculadora</Label>
+        <Entry Placeholder="" IsEnabled="False" x:Name="caja" />
+        <Button Text="CE"  Clicked="lim_Clicked" BackgroundColor="Gray"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Button Text="1" HorizontalOptions="FillAndExpand" Clicked="a_Clicked" BackgroundColor="Gray" />
+            <Button Text="2" HorizontalOptions="FillAndExpand" Clicked="b_Clicked" BackgroundColor="Gray"/>
+            <Button Text="3" HorizontalOptions="FillAndExpand" Clicked="c_Clicked" BackgroundColor="Gray"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="4" HorizontalOptions="FillAndExpand" Clicked="d_Clicked" BackgroundColor="Gray"/>
+            <Button Text="5" HorizontalOptions="FillAndExpand" Clicked="e_Clicked" BackgroundColor="Gray"/>
+            <Button Text="6" HorizontalOptions="FillAndExpand" Clicked="f_Clicked" BackgroundColor="Gray"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="7" HorizontalOptions="FillAndExpand" Clicked="g_Clicked" BackgroundColor="Gray"/>
+            <Button Text="8" HorizontalOptions="FillAndExpand" Clicked="h_Clicked" BackgroundColor="Gray"/>
+            <Button Text="9" HorizontalOptions="FillAndExpand" Clicked="i_Clicked" BackgroundColor="Gray"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Button Text="0" HorizontalOptions="FillAndExpand" Clicked="j_Clicked" BackgroundColor="Gray"/>
+            <Button Text="/" HorizontalOptions="FillAndExpand" Clicked="k_Clicked" BackgroundColor="Gray"/>
+            <Button Text="-" HorizontalOptions="FillAndExpand" Clicked="r_Clicked" BackgroundColor="Gray"/>
+            <Button Text="sqrt" HorizontalOptions="FillAndExpand" Clicked="l_Clicked" BackgroundColor="Gray"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="+" HorizontalOptions="FillAndExpand" Clicked="suma_Clicked" BackgroundColor="Gray"/>
+            <Button Text="." HorizontalOptions="FillAndExpand" Clicked="punto_Clicked" BackgroundColor="Gray"/>
+            <Button Text="%" HorizontalOptions="FillAndExpand" Clicked="q_Clicked" BackgroundColor="Gray"/>
+            <Button Text="=" HorizontalOptions="FillAndExpand" Clicked="p_Clicked" BackgroundColor="Gray"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="*" HorizontalOptions="FillAndExpand" Clicked="o_Clicked" BackgroundColor="Gray"/>
+            <Button Text="Regresar" Clicked="Prin_Clicked" BackgroundColor="Gray"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
